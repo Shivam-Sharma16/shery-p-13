@@ -29,7 +29,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .view1 .top h1 {
   width: 100%;
@@ -40,4 +40,42 @@ main {
 }
 .view1 .top p {
   opacity: 0.9;
+}
+.view1 .bottom {
+  width: 100%;
+}
+.view1 .bottom .images {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a c c" "a a c c";
+}
+.view1 .bottom .images .img-a {
+  grid-area: a;
+}
+.view1 .bottom .images .img-a img {
+  width: 100%;
+  aspect-ratio: 2/5.2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.view1 .bottom .images .img-b {
+  grid-area: b;
+}
+.view1 .bottom .images .img-b img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.view1 .bottom .images .img-c {
+  grid-area: c;
+}
+.view1 .bottom .images .img-c img {
+  aspect-ratio: 2/2;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */
